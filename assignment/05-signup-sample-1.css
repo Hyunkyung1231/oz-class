@@ -1,0 +1,97 @@
+*{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+
+}
+h1{
+  /*font-family: 'Nanum Myeongjo', serif, arial;*/
+  /*font-family: 'Noto Sans KR', sans-serif;*/
+  
+  font-weight: 900;
+  } 
+.form{
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 0.3px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px white;
+}
+.form{
+  box-shadow: 5px 5px 1px #EAEF9D, 
+  10px 10px 1px #C1D95C, 
+  10px 10px 1px #80B155, 
+  15px 15px 1px #498428;
+}
+#email{
+  width: 150px;
+  height: 20px;
+  margin: 5px;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+#name{
+  width: 150px;
+  height: 20px;
+  margin: 5px;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+#password{
+  width: 150px;
+  height: 20px;
+  margin: 5px;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+#checkpassword{
+  width: 150px;
+  height: 20px;
+  margin: 5px;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+#phonenum{
+  width: 50px;
+  height: 20px;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+.location{
+  width: 150px;
+  height: 20px;
+  margin: 5px;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+.verifycode{
+  font-size:x-small;
+  color: rgb(41, 41, 41);
+}
+#sendcode{
+  width: 100px;
+  height: 20px;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+#timer{
+  font-size:x-small;
+  color: rgb(41, 41, 41);
+}
+#checkcode{
+  width: 80px;
+  height: 20px;
+  margin: 5px ;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+#signin{
+  width: 80px;
+  height: 20px;
+  margin: 5px ;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}

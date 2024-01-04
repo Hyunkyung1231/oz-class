@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+    background: linear-gradient(135deg, #6868ac,#CF9893);
+}
+
+.text{
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 20px;
+    color: #6868ac;
+    text-align: center;
+    border: 2px solid #9c9cff;
+    border-radius: 3px;
+    font-weight: bold;
+}

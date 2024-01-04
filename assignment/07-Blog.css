@@ -1,0 +1,20 @@
+*{
+    text-align: center;
+}
+html{
+    background-color: rgb(234, 255, 233);
+}
+body{
+    width: 400px;
+    margin: auto;
+}
+h1{
+    font-size: 50px;
+}
+#greeting{
+    font-family: 'Nanum Myeongjo', serif, arial;
+    
+}
+#thank{
+    font-weight: 900;
+}
