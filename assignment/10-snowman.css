@@ -1,0 +1,153 @@
+*{
+    background-color: rgb(209, 74, 62);
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.hat-top{
+    width: 90px;
+    height: 50px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #0e0e0e;
+}
+
+.hat-bottom{
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #0e0e0e;
+}
+
+.snowman-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.snowman-face{
+    position: relative;
+    top: -20px;
+    left: 25px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: aliceblue;
+}
+
+.snowman-eyes{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF00;
+}
+
+.eye-left{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    margin: 40px 20px 20px 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+.eye-right{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    margin: 40px 20px 20px 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.snowman-nose{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: coral;
+    position: relative;
+    top: 0px;
+    right: -30px;
+}
+
+.snowman-muffler{
+    /* display: flex; */
+    /* justify-content: flex-end; */
+}
+ 
+.muffler-row{
+    position: relative;
+    top: -60px;
+    left: 20px;
+    display: flex;
+    width: 160px;
+    height: 40px;
+    border-radius: 200px;
+    background-color: rgb(177, 50, 38);
+    box-shadow: 1px 1px 7px rgb(107, 30, 23);
+    z-index: 3;
+
+}
+
+.muffler-column{
+    position: relative;
+    top: -70px;
+    left: 120px;
+    width: 40px;
+    height: 80px;
+    border-radius: 200px;
+    background-color: rgb(177, 50, 38);
+    box-shadow: 1px 1px 7px rgb(107, 30, 23);
+    z-index: 2;
+}
+
+
+.snowman-bottom-body{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: aliceblue;
+    position: relative;
+    top: -180px;
+    left: 0px;
+}
+
+.body-button{
+    background-color: #FFFFFF00;
+}
+
+.button{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(107, 107, 107);
+    position: relative;
+    left: 30px;
+    top: 50px;
+
+}
+
+#button2{
+    margin-left: -1px;
+}
