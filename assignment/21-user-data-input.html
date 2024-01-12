@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-data-input</title>
+    <style>
+        #hobby{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <p id="hobby"></p>
+    <p id="song"></p>
+    
+    <script>
+
+       const nameInput  = document.querySelector("#name")
+        let name = prompt("당신의 이름은 무엇입니까?")
+        nameInput.textContent = name
+
+        const hobbyInput = document.querySelector("#hobby")
+         let hobby = prompt("당신의 취미는 무엇입니까?")
+         hobbyInput.textContent = `저의 취미는 ${hobby}입니다.`
+
+         document.querySelector("#song")
+         .textContent = `저의 최애노래는 ${prompt("당신의 최애 노래는 무엇입니까?")}입니다.`
+         
+
+    </script>
+
+</body>
+</html>
