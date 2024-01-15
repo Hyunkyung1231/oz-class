@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .main_container{
+            width: 240px;
+            height: 23rem;
+            overflow: hidden;
+        }
+        .carousel{
+            display: inline-flex;
+            transform: translate3d(0, 0, 0);
+            transition: transform 0.5s;
+        }
+        img{
+            width: 240px;
+            height: 240px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        <div class="carousel">
+            <img src="https://i.pinimg.com/564x/2b/0f/ae/2b0fae05f705e53c08d4a030b0ef4e48.jpg">
+            <img src="https://i.pinimg.com/564x/34/ba/7c/34ba7c95ee81ec2db03ccecb5bd5904b.jpg">
+            <img src="https://i.pinimg.com/564x/14/f0/bb/14f0bb0849e77babab894cdae18ffd99.jpg">
+            <img src="https://i.pinimg.com/564x/11/48/9b/11489b8f2ac4e1dc98e876b445af93d6.jpg">
+        </div>
+        <div class="buttons">
+            <button class="prev" type="button">prev</button>
+            <button class="next" type="button">next</button>
+        </div>
+    </div>
+
+    <script src="22_2-carousel.js"></script>
+</body>
+</html>
