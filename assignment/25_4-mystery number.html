@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(60, 60, 60);
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex">
+        <div class="text_container">
+            <h1>Mystery Number 맞추기</h1>
+            <h3>1부터 100사이의 숫자를 입력하세요</h3>
+            </div>
+            <div class="button_container">
+                <input type="number" id="num">
+                <input type="submit" value="뚜둥!" id="submit" onclick="submit()">
+            </div>
+
+        </div>
+
+    <script>
+        //랜덤 넘버
+        let num = Math.random();
+        let num100 = num * 100;
+        let numinterger = Math.floor(num100);
+        const submitnum = document.getElementById("num")
+
+        console.log(numinterger)
+
+        function submit (){
+            const submitBtn =   document.getElementById("submit")
+            const finalnum = parseInt(submitnum.value)
+
+            if (finalnum < numinterger){
+                return alert("더 큰 값을 입력해 보세요"); 
+            }else if(finalnum > numinterger){
+                return alert("더 작은 값을 입력해 보세요");
+            } else {
+                return alert("정답입니다!")
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

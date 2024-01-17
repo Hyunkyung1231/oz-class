@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>별트리 찍기</h1>
+
+
+    <script>
+        const p1 = document.createElement("p")
+        p1.textContent = "1번별"
+        document.body.appendChild(p1)
+
+
+
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j <= i; j++) {
+            document.write('*')
+            }
+            document.write('<br>');
+        }
+
+        const p2 = document.createElement("p")
+        p2.textContent = "2번별"
+        document.body.appendChild(p2)
+
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j <= i; j++) {
+            document.write('*')
+            }
+            document.write('<br>');
+        }
+        for (let i = 5; i > 0; i--) {
+            for (let j = 1; j <= i; j++) {
+            document.write('*')
+            }
+            document.write('<br>');
+        }
+        const p3 = document.createElement("p")
+        p3.textContent = "3번별"
+        document.body.appendChild(p3)
+
+            //이해를 할것!
+            for(let i = 0; i < 5; i++)  {
+            for(let j = 4; j > i; j--)  {
+                document.write('&nbsp');
+            }
+            for(let j = 0; j <= i; j++)  {
+                document.write('*');
+            }
+            for(let j = 1; j <= i; j++)  {
+                document.write('*');
+            }
+
+            document.write('<br>');
+            }
+
+            for(let i = 0; i < 4; i++)  {
+            for(let j = 0; j <= i; j++)  {
+                document.write('&nbsp');
+            }
+            for(let j = 4; j > i; j--)  {
+                document.write('*');
+            }
+            for(let j = 3; j > i; j--)  {
+                document.write('*');
+            }
+            document.write('<br>');
+            }
+
+    </script>
+</body>
+</html>

@@ -54,12 +54,25 @@ h1{
   border: 0.9px solid #336A29;
   border-radius: 2px;
 }
-#phonenum{
+#phonenumbefore{
   width: 50px;
   height: 20px;
   border: 0.9px solid #336A29;
   border-radius: 2px;
 }
+#phonenumcenter{
+  width: 50px;
+  height: 20px;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+#phonenumafter{
+  width: 50px;
+  height: 20px;
+  border: 0.9px solid #336A29;
+  border-radius: 2px;
+}
+
 .location{
   width: 150px;
   height: 20px;
