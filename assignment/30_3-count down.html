@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count down</title>
+</head>
+<body>
+    
+
+    <h3 id="now"></p>
+    <h3 id="later"></p>
+
+    <script>
+
+        let timeIdnow = setInterval(function(){
+            
+        const h3 = document.getElementById("now")
+        const h4 = document.getElementById("later")
+
+        let now = new Date();
+        let year = now.getFullYear()
+        let month = now.getMonth() + 1
+        let day = now.getDate()
+        let hour = now.getHours()
+        let min = now.getMinutes()
+        let sec = now.getSeconds()
+        
+        let later = new Date(2024, 11, 31, 23, 59, 59);
+        let yearlater = later.getFullYear()
+        let monthlater = later.getMonth() + 1
+        let daylater = later.getDate()
+        let hourlater = later.getHours()
+        let minlater = later.getMinutes()
+        let seclater = later.getSeconds()
+        
+        h3.textContent = `현재 시간 : ${year}년 ${month}월 ${day}일 ${hour}시 ${min}분 ${sec}초 GMT+0900 (한국 표준시)`
+        h4.textContent = `올해의 남은 시간 ${monthlater-month}월 ${daylater-day}일 ${hourlater-hour}시 ${minlater-min}분 ${seclater-sec}초 남았습니다.`
+        
+        }, 1000)
+
+    </script>
+</body>
+</html>

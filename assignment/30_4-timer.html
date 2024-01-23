@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <h1>⏰스탑워치⏰</h1>
+    <br>
+    <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="mseconds">00</span>
+    <br>
+    <br>
+    <button id="start">시작</button>
+    <button id="stop">중지</button>
+
+
+    <script>
+        let minutes = 0;
+        let seconds = 0;
+        let mseconds = 0;
+
+        const displayMin = document.getElementById("minutes")
+        const displaySec = document.getElementById("seconds")
+        const displayMsec = document.getElementById("mseconds")
+        const startBtn = document.getElementById("start")
+        const stopBtn = document.getElementById("stop")
+        let interval;
+
+
+        startBtn.onclick = function(){
+            clearInterval(interval)
+            interval = setInterval(timer,10)
+        }
+
+        function timer (){
+            mseconds++;
+            displayMsec.textContent = mseconds;
+            if (mseconds > 99){
+                seconds++
+                displaySec.textContent = seconds;
+                mseconds = 0;
+                displayMsec = "00";
+            }
+            if(seconds > 59){
+                minutes++
+                displayMin.textContent = minutes;
+                seconds = 0;
+                displaysec = "00";
+            }
+
+        }
+
+        stopBtn.onclick = function(){
+            clearInterval(interval)
+        }
+
+    </script>
+
+
+</body>
+</html>

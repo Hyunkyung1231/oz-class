@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>times table</title>
+    <style>
+        .flex {
+            display: flex;
+
+        }
+        .row2 {
+            width: 80px;
+            text-align: center;
+            border: 2px double black;
+
+        }
+
+        .row1 {
+            width: 80px;
+            text-align: center;
+            border: 2px double black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>구구단표</h1>
+    <br>
+    <h3>2단 ~ 9단을 만들어 보세요</h3>
+    <div class="container flex" id="container-row1"></div>
+    <div class="container flex" id="container-row2"></div>
+
+    <script>
+
+        for (let i = 2; i <= 9; i++){
+                const div1 = document.getElementById("container-row1")
+                const row1 = document.createElement("div")
+                row1.classList.add("row1")
+                row1.textContent = `${i}단`
+                div1.append(row1)
+
+                const div2 = document.getElementById("container-row2")
+                const row2 = document.createElement("span")
+                row2.classList.add("row2")
+                div2.append(row2)
+
+
+            for(let j = 1; j <= 9; j++){
+                const column = document.createElement("span")
+                column.innerHTML = `${i} x ${j} = ${i*j}<br>`
+                row2.append(column)
+      
+            }
+        }
+
+    </script>
+</body>
+</html>
