@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="addicecream">아이스크림 종류 추가</button>
+    <button id="outputicecream">아이스크림 이름 출력</button>
+    <button id="outputicecreaminput">입력한 아이스크림 목록 출력</button>
+    <h1>입력한 아이스크림 목록 : </h1>
+    <h1 id="text"></h1>
+
+
+    <script>
+        const addButton = document.getElementById("addicecream")
+        const outputButton = document.getElementById("outputicecream")
+        const finaloutputButton = document.getElementById("outputicecreaminput")
+
+        let icearr = [];
+
+        addButton.addEventListener("click", function(){
+            let inputice = prompt("좋아하는 아이스크림이 뭐고")
+            if (inputice == null){
+            }else
+            icearr.push(inputice)
+            console.log(icearr)
+        })
+
+        outputButton.addEventListener("click", function(){
+            for(let i = 0; i < icearr.length; i++){
+                alert(icearr[i]);
+            }
+        })
+
+        finaloutputButton.addEventListener("click", function(){
+            const h1 = document.getElementById("text")
+            h1.textContent = icearr
+        })
+
+
+
+    </script>
+
+
+</body>
+</html>

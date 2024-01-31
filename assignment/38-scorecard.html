@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr{
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 0.1rem solid black;
+            margin: 0;
+            padding: 0 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>떡잎 유치원 멀리뛰기 결과</h1>
+        <table id="scorecard" style="border: 1px;">
+            <tr>
+                <th>이름</th>
+                <th>점수</th>
+            </tr>
+            <tr>
+                <th>짱구</th>
+                <th>45</th>
+            </tr>
+            <tr>
+                <th>맹구</th>
+                <th>75</th>
+            </tr>
+            <tr>
+                <th>철수</th>
+                <th>95</th>
+            </tr>
+            <tr>
+                <th>훈이</th>
+                <th>50</th>
+            </tr>
+            <tr>
+                <th>유리</th>
+                <th>68</th>
+            </tr>
+            <tr>
+                <th>수지</th>
+                <th>86</th>
+            </tr>
+        </table>
+        <span> 75점이 넘는 사람은</span>
+        </div>
+
+
+
+    <script>
+        
+        const div = document.getElementById("container")
+
+            let score = [
+                {name: "짱구", result: 45},
+                {name: "맹구", result: 75},
+                {name: "철수", result: 95},
+                {name: "훈이", result: 50},
+                {name: "유리", result: 68},
+                {name: "수지", result: 86}
+
+            ]  
+
+            score.map(function(score){
+                if(score.result >= 75){
+                    const p = document.createElement("span")
+                    p.textContent = score.name
+                    div.append(p)
+                }
+            })
+
+    </script>
+</body>
+</html>

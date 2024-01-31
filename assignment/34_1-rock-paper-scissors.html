@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>가위바위보 게임</h1>
+    <p>가위,바위, 보 중 하나를 입력하세요</p>
+    <input id="input">
+    <input type="submit" id="submit" value="결과 확인">
+    <p id="resulttext"></p>
+
+    <script>
+        const inputText = document.getElementById("input")
+        const submitbutton = document.getElementById("submit")
+
+        let arr = ["가위", "바위", "보"]
+        let randomArr = Math.floor(Math.random() * arr.length);
+        let finalrandomArr = arr[randomArr]
+        console.log(finalrandomArr)
+
+        submitbutton.addEventListener("click", rockpaperscissors)
+
+        function rockpaperscissors (){
+            let result = inputText.value
+            const p = document.getElementById("resulttext")
+            if (inputText.value === finalrandomArr){
+                p.textContent = `당신의 선택은 ${result} / 컴퓨터의 선택은 ${finalrandomArr} / 결과는 비겼습니다!` 
+            }else if (inputText.value === "가위", finalrandomArr ==="바위"){
+                p.textContent = `당신의 선택은 ${result} / 컴퓨터의 선택은 ${finalrandomArr} / 결과는 졌습니다!` 
+            }else if (inputText.value === "가위", finalrandomArr ==="보"){
+                p.textContent = `당신의 선택은 ${result} / 컴퓨터의 선택은 ${finalrandomArr} / 결과는 이겼습니다!` 
+            }else if (inputText.value === "바위", finalrandomArr ==="가위"){
+                p.textContent = `당신의 선택은 ${result} / 컴퓨터의 선택은 ${finalrandomArr} / 결과는 이겼습니다!` 
+            }else if (inputText.value === "바위", finalrandomArr ==="보"){
+                p.textContent = `당신의 선택은 ${result} / 컴퓨터의 선택은 ${finalrandomArr} / 결과는 졌습니다!` 
+            }else if (inputText.value === "보", finalrandomArr ==="가위"){
+                p.textContent = `당신의 선택은 ${result} / 컴퓨터의 선택은 ${finalrandomArr} / 결과는 졌습니다!` 
+            }else{
+                p.textContent = `당신의 선택은 ${result} / 컴퓨터의 선택은 ${finalrandomArr} / 결과는 이겼습니다!` 
+            }
+        }
+    </script>
+
+
+
+
+</body>
+</html>
